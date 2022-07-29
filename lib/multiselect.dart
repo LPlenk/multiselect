@@ -131,9 +131,9 @@ class _DropDownMultiSelectState extends State<DropDownMultiSelect> {
                       : widget.whenEmpty ?? '')
               : InputDecoration(
                   border: OutlineInputBorder(),
-                  isDense: true,
+                  isDense: false,
                 ),
-          isDense: false,
+          isDense: widget.isDense,
           isExpanded: widget.isExpanded,
           onChanged: widget.enabled ? (x) {} : null,
           value: null,
